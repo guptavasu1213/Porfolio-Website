@@ -1,0 +1,13 @@
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    --primary-color: #4458dc;
+    --title: #141313;
+    --gradient-color: linear-gradient(90 deg, #4458dc 0%, #854fee 100%);
+
+    --roboto: "Roboto", cursive;
+}

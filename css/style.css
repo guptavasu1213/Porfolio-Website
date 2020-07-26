@@ -1,0 +1,118 @@
+/* import fonts from fonts.css file */
+@import url(./fonts.css);
+@import url(./partials/variables.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+/* Remove all the padding */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header_area {
+    /* background-color: #5f6366   ; */
+    background-color: #0D1330;
+}
+
+/* Change padding of the top-left item */
+.header_area .main-menu .navbar .navbar-brand{
+    /* padding: 0 2rem 0 5rem; */
+    color: white;
+}
+
+/* Change padding of the top navigation bar  */
+/* .header_area .main-menu .navbar{
+    background-color: #3aafa9;
+    padding: 1rem 20rem;
+} */
+
+/* Change text properties of the elements in navigation bar */
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 1.2rem var(--roboto) ;
+    padding: 0.7rem 2.5rem;
+    color: white;
+    /* border-radius: 1rem; */
+    min-height:5vh;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    transition: .3s ease;
+    transition-property: color, background-color;
+}
+.header_area .main-menu .nav-item .nav-link:hover{
+    color: #5fbec1;
+    background-color: #181e3d;
+}
+
+.contain{
+    min-height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-area {
+    /* background-color: #3aafa9; */
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* .site-title{
+    background-color: #3aafa9;
+    padding-top: 20%;
+} */
+.greeting-text{
+    /* Moving the text to the centre of the screen */
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+
+    /* Setting text appearance */
+    /* font-family: "Mangan"; */
+    font-family: "Montserrat", sans-serif;
+    font-size: xxx-large;
+    text-align: center;
+    color: #0D1330;
+    color: #4d6d9a;
+
+    background-color: whitesmoke;
+    opacity: 0.6;
+    padding: 2rem;
+    margin: 2rem;
+}
+.red-text{
+    color: #ff6262;
+}
+
+.highlight{
+    color: #00612c
+}
+.learn-more{
+    padding: 1rem 2.5rem;
+    font-family: "Raleway";
+    text-transform: uppercase;
+
+    display: inline-block;
+    color: white;
+    font-size: 1.4rem;
+    margin: auto;
+    /* border: 0.2rem solid white; */
+    border-radius: 2.5rem;
+    /* text-transform: uppercase; */
+    background-color: #0D1330;
+
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+.learn-more:hover{
+    background-color: #181e3d;
+    color: #5fbec1;
+    text-decoration: none;
+}
