@@ -135,7 +135,8 @@ html{
     /* Change text appearance */
     font: normal 600 5vh "Raleway";
     /* text-decoration: underline; */
-    
+    text-transform: uppercase;
+
     /* text-underline-offset: 2rem; */
     color:  white;
 }
@@ -181,9 +182,14 @@ html{
     font-size: 2.4vmin;
     background-color: #343a40;
     color: white;
-
-    box-shadow: 10px 10px 300px 6px black;    
+    box-shadow: 10px 10px 50px 6px black;    
 }
+
+#about-me .my-information .text:hover{
+    box-shadow: 10px 10px 50px 10px black;    
+}
+
+
 #about-me .my-information .my-portrait{
     flex:1;
     /* background-image: url(../img/portrait.jpg);
