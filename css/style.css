@@ -13,42 +13,52 @@
     box-sizing: border-box;
 }
 
-.header_area {
-    /* background-color: #5f6366   ; */
+html{
+    scroll-behavior: smooth;
+}
+
+/* ============LANDING PAGE START============ */
+#header_area {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
     background-color: #0D1330;
 }
 
+.nav-bar-hamburger{
+    color: white;
+}
+
 /* Change padding of the top-left item */
-.header_area .main-menu .navbar .navbar-brand{
+#header_area .main-menu .navbar .navbar-brand{
     /* padding: 0 2rem 0 5rem; */
     color: white;
 }
 
-/* Change padding of the top navigation bar  */
-/* .header_area .main-menu .navbar{
-    background-color: #3aafa9;
-    padding: 1rem 20rem;
-} */
-
 /* Change text properties of the elements in navigation bar */
-.header_area .main-menu .nav-item .nav-link{
-    font: normal 500 1.2rem var(--roboto) ;
+#header_area .main-menu .nav-item .nav-link{
+    font: normal 500 2.1vmin "Raleway";
     padding: 0.7rem 2.5rem;
     color: white;
     /* border-radius: 1rem; */
     min-height:5vh;
-    font-family: "Raleway";
     text-transform: uppercase;
     transition: .3s ease;
     transition-property: color, background-color;
 }
-.header_area .main-menu .nav-item .nav-link:hover{
+#header_area .main-menu .nav-item .nav-link:hover{
     color: #5fbec1;
     background-color: #181e3d;
 }
+.name-glow{
+    font-weight: 550;
+    color: rgb(4, 245, 213);
+}
 
 .contain{
-    min-height: 95vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -56,17 +66,16 @@
     justify-content: center;
 }
 
-.home-area {
+#home-area {
     /* background-color: #3aafa9; */
     background-image: url(../img/background.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
 }
-/* .site-title{
-    background-color: #3aafa9;
-    padding-top: 20%;
-} */
+
+
+/* For Landing page greeting text */
 .greeting-text{
     /* Moving the text to the centre of the screen */
     /* position: absolute;
@@ -75,25 +84,27 @@
     transform: translateX(-50%) translateY(-50%); */
 
     /* Setting text appearance */
-    /* font-family: "Mangan"; */
     font-family: "Montserrat", sans-serif;
-    font-size: xxx-large;
+    font-size: 5.5vmin;
     text-align: center;
-    color: #0D1330;
     color: #4d6d9a;
 
-    background-color: whitesmoke;
-    opacity: 0.6;
+    background-color: rgba(255,255,255,0.6);
     padding: 2rem;
     margin: 2rem;
 }
+.greeting-text:hover{
+    background-color: rgba(255,255,255,0.75);
+}
 .red-text{
-    color: #ff6262;
+    color: #ff0000;
 }
 
 .highlight{
     color: #00612c
 }
+
+/* Learn More Button on Landing page */
 .learn-more{
     padding: 1rem 2.5rem;
     font-family: "Raleway";
@@ -101,7 +112,8 @@
 
     display: inline-block;
     color: white;
-    font-size: 1.4rem;
+    font-size: 2.5vmin;
+    
     margin: auto;
     /* border: 0.2rem solid white; */
     border-radius: 2.5rem;
@@ -115,4 +127,103 @@
     background-color: #181e3d;
     color: #5fbec1;
     text-decoration: none;
+}
+
+/* ============LANDING PAGE END============ */
+
+.section-heading{
+    /* Change text appearance */
+    font: normal 600 5vh "Raleway";
+    /* text-decoration: underline; */
+    
+    /* text-underline-offset: 2rem; */
+    color:  white;
+}
+
+/*
+.section-heading::after{
+    content: '';
+    display: block;
+    width: 62vw;
+    height: 2px;
+    background-color: black;    
+    margin: 2rem 0 3rem 0;    
+}
+*/
+#about-me .divider{
+    display: block;
+    width: 62vw;
+    height: 2px;
+    background-color: black;    
+    margin: 2rem 0 3rem 0;
+}
+/* ============About Me============ */
+
+#about-me{
+    background-color: #5fbec1;  
+}
+#about-me .my-information{
+    display: inline-flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    font-family: "Calibre";
+}
+
+#about-me .my-information .empty{
+    flex:1;
+}
+#about-me .my-information .text{
+    flex:2;
+    padding: 2%;
+
+    letter-spacing: 0.07rem;
+    border-radius: 5%;
+    font-size: 2.4vmin;
+    background-color: #343a40;
+    color: white;
+
+    box-shadow: 10px 10px 300px 6px black;    
+}
+#about-me .my-information .my-portrait{
+    flex:1;
+    /* background-image: url(../img/portrait.jpg);
+    background-size: cover; */
+    /* background-position: top center; */
+    /* flex-basis: auto;
+    border-radius: 100%;
+    margin-left: 10vmin; */
+
+    margin-left: 5vmin;
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    border-style: solid;
+
+    /* filter: brightness(85%); */
+
+    border-color: #343a40;
+    /* margin-top: 100px; */
+    /* float: right; */
+    max-width: 450px;
+    /* transition: filter 0.3s, background 1s;     */
+}
+
+#about-me .my-information .my-portrait:hover {
+    /* filter: brightness(100%); */
+    /* background: #EBEFF7; */
+  }
+/*   
+  .image-holder {
+    height: 250px;
+    width: 200px;
+    opacity: 0.5;
+  } */
+
+#about-me .my-information .name-intro{
+    /* display: block;
+    margin: 30px 0;
+    width: 100px;
+    height: 2px;
+    background-color: #00b7c7; */
 }

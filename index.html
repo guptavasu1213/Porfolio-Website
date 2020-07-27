@@ -14,24 +14,25 @@
 
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
     <!-- Header area -->
-    <header class="header_area">
+    <header id="header_area">
         <div class="main-menu">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">LOGO</a>
+                <a class="navbar-brand" href="#home-area"><span class="name-glow">V</span>asu <span class="name-glow">G</span>upta</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="fas fa-bars nav-bar-hamburger"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <!-- Moves the bar to the right -->
                     <div class="mr-auto"></div>
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#about-me">About Me <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Projects</a>
@@ -48,7 +49,8 @@
         </div>
     </header>
 
-   <main class="home-area contain">
+
+   <section id="home-area" class="contain">
         <div class="greeting-text">
             <span class="red-text">Hi,</span> <br>
             I'm
@@ -56,9 +58,9 @@
             A Canadian Computer Science Student!
         </div>
         <div>
-            <a href="#" type="button" class="learn-more"> Learn More</a>
+            <a href="#about-me" type="button" class="learn-more"> Learn More</a>
         </div>
-    </main>
+    </section>
 
     <!-- <main class="home-area">
         <section class="banner">
@@ -79,6 +81,29 @@
         </section>
     </main>
  -->
+    <section id="about-me" class="contain">
+        <div class="section-heading">
+            About Me
+        </div>
+        <div class="divider"></div>
+        <div class="my-information">
+            <div class="empty"> </div>
+            <div class="text">
+                <p>
+                    <span class="name-intro">Hello! I am Vasu, a full-time Computer Science Student.</span>
+                    <br> <br>
+                    My passion brought me to MacEwan University for pursuing a Bachelor’s Degree focused in Computer Science. I studied new
+                    languages, algorithms, principles of software engineering, all with the same fascination that drove me towards this
+                    field as a kid. Thereafter, I discovered there is yet more to learn, more problems to solve, and more to build.
+                    <br><br>
+                    I believe that my eagerness to learn about emerging technologies, designing and deploying powerful programs will help me
+                    build my career as a Software Developer. 
+                </p>
+            </div>
+            <img class="my-portrait" src="./img/portrait.jpg">
+            <div class="empty"> </div>
+        </div>
+    </section>
 
     <!-- jquery file -->
     <script src="./js/jquery.3.5.1.js"></script>
