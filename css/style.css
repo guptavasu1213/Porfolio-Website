@@ -134,6 +134,7 @@ html{
 .section-heading{
     /* Change text appearance */
     font: normal 600 5vh "Raleway";
+    
     /* text-decoration: underline; */
     text-transform: uppercase;
 
@@ -188,7 +189,6 @@ html{
 #about-me .my-information .text:hover{
     box-shadow: 10px 10px 50px 10px black;    
 }
-
 
 #about-me .my-information .my-portrait{
     flex:1;
