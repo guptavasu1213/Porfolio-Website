@@ -143,26 +143,11 @@ html{
 /* ============LANDING PAGE END============ */
 
 .section-heading{
-    /* Change text appearance */
     font: normal 600 5vh "Raleway";
-    
-    /* text-decoration: underline; */
     text-transform: uppercase;
-
-    /* text-underline-offset: 2rem; */
-    color:  white;
+    color:  black;
 }
 
-/*
-.section-heading::after{
-    content: '';
-    display: block;
-    width: 62vw;
-    height: 2px;
-    background-color: black;    
-    margin: 2rem 0 3rem 0;    
-}
-*/
 #about-me .divider{
     display: block;
     width: 62vw;
@@ -170,77 +155,34 @@ html{
     background-color: black;    
     margin: 2rem 0 3rem 0;
 }
+
+.white-background{
+    background-color: #ffffff;  
+}
+
+.light-gray-background{
+    background-color: #F6F6F6;
+}
+
 /* ============About Me============ */
 
-#about-me{
-    background-color: #5fbec1;  
-}
-#about-me .my-information{
-    display: inline-flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    font-family: "Calibre";
+#about-me .summary-text{
+    font: normal 400 2.5vmin "Ubuntu";
+    text-align: center;
+
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-#about-me .my-information .empty{
-    flex:1;
-}
-#about-me .my-information .text{
-    flex:2;
-    padding: 2%;
-
-    letter-spacing: 0.07rem;
-    border-radius: 5%;
-    font-size: 2.4vmin;
-    background-color: #343a40;
-    color: white;
-    box-shadow: 10px 10px 50px 6px black;    
-}
-
-#about-me .my-information .text:hover{
-    box-shadow: 10px 10px 50px 10px black;    
-}
-
-#about-me .my-information .my-portrait{
-    flex:1;
-    /* background-image: url(../img/portrait.jpg);
-    background-size: cover; */
-    /* background-position: top center; */
-    /* flex-basis: auto;
-    border-radius: 100%;
-    margin-left: 10vmin; */
-
-    margin-left: 5vmin;
-    display: inline-block;
+.my-portrait{
     width: 10%;
     height: 10%;
-    border-radius: 50%;
-    border-style: solid;
-
-    /* filter: brightness(85%); */
-
-    border-color: #343a40;
-    /* margin-top: 100px; */
-    /* float: right; */
     max-width: 450px;
-    /* transition: filter 0.3s, background 1s;     */
-}
 
-#about-me .my-information .my-portrait:hover {
-    /* filter: brightness(100%); */
-    /* background: #EBEFF7; */
-  }
-/*   
-  .image-holder {
-    height: 250px;
-    width: 200px;
-    opacity: 0.5;
-  } */
+    border-radius: 100%;
+    border-style: solid;
+    border-width: thin;
+    border-color: #343a40;
 
-#about-me .my-information .name-intro{
-    /* display: block;
-    margin: 30px 0;
-    width: 100px;
-    height: 2px;
-    background-color: #00b7c7; */
+    margin-bottom: 3rem;    
 }
