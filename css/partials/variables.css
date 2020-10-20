@@ -9,5 +9,9 @@ html, body{
     --title: #141313;
     --gradient-color: linear-gradient(90 deg, #4458dc 0%, #854fee 100%);
 
+    --gradient-bg: rgb(237,85,88);
+    --pink-gradient: linear-gradient(90deg, rgba(211,41,153,1) 67%, rgba(199,19,72,1) 100%);
+    /* --pink-gradient: linear-gradient(90deg, rgba(237,85,88,1) 0%, rgba(211,41,153,1) 57%, rgba(199,19,72,1) 100%); */
+    /* --pink-gradient: linear-gradient(to right, #C71348 100%, #D32999 67%, #ED5558 0%); */
     --roboto: "Roboto", cursive;
 }
