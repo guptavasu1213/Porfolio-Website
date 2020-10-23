@@ -273,14 +273,14 @@ html{
 }
 
 #projects .view-more-projects-button{
-    font: normal 500 1.7vmin "Raleway";
+    font: normal 500 17px "Raleway";
     color: white;
     text-transform: uppercase;
     text-align: center;
 
     background-color: #171C1A;
 
-    padding: 0.7rem 70vmin;
+    padding: 0.7rem 30vw;
 
     transition: .3s ease;
     transition-property: color; 
@@ -297,16 +297,108 @@ html{
     text-decoration: none;
 }
 
+/* ===================== CONTACT  */
 
+#contact{
+    background-image: linear-gradient( #a77a79 0%, #8e423e 100%);
+}
 
-#about-me .my-information .text{
-    flex:2;
-    padding: 2%;
-
-    letter-spacing: 0.07rem;
-    border-radius: 5%;
-    font-size: 2.4vmin;
-    background-color: #343a40;
+.white-font{
     color: white;
-    box-shadow: 10px 10px 50px 6px black;    
+}
+
+.contact-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-info-section{
+    flex: 1;
+}
+
+.contact-info-section, .contact-message{
+    padding: 10px;
+}
+
+.contact-info-section .textbox{
+    width: 300px;
+}
+
+.contact-message .textbox{
+    width: 620px;
+}
+
+.contact-info-section .textbox, .contact-message .textbox{
+    padding: 5px;
+
+    background-color: transparent;
+    
+    outline: none;
+    /* border: none; */
+    border-bottom: white;
+    border: 2px solid hsla(0,0%,100%,.6);
+    
+    transition: border-color 0.15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#contact .labels{
+    font: normal bold 17px "Raleway";
+    text-transform: uppercase;
+}
+
+/* #contact submit */
+
+#contact .submit{
+    font: normal 500 17px "Raleway";
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: transparent;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 5%;
+
+    min-width: 50px;
+    width: 300px;
+
+    margin: 3rem 4rem;
+    padding: 0.5rem 2rem;
+
+    transition: .3s ease;
+    transition-property: background-color, color; 
+}
+
+#contact .submit:hover{
+    background-color: white;
+    color: black;
+}
+
+#contact .center-align{
+    text-align: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.5; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+
+  footer{
+    color: white;   
+    font: normal 500 2vmin "Raleway";
+    text-align: center;
+
+    background-color: #171C1A;
+
+    padding: 0.7rem 70vmin;
 }
