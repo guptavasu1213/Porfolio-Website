@@ -22,8 +22,9 @@
     <header id="header_area">
         <div class="main-menu">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#home-area"><span class="name-glow">V</span>asu <span
-                        class="name-glow">G</span>upta</a>
+                <a class="navbar-brand" href="#home-area">
+                    <img src="./img/name_logo.png" width=40 alt="">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fas fa-bars nav-bar-hamburger"></span>
@@ -39,10 +40,12 @@
                             <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Experience</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <div class="resume">
+                                <a class="nav-link" href="./assets/resume.pdf" target="_blank">Resume</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -66,7 +69,7 @@
             A little bit <span class="pink-gradient">about me</span>
         </div>
         <div class="divider"></div>
-        <img class="my-portrait" src="./img/portrait.jpg">
+        <img class="my-portrait" src="./img/portrait.png">
 
         <div class="summary-text">
             <span class="name-intro">Hello! I am Vasu, a full-time Computer Science Student.</span>
@@ -209,7 +212,7 @@
         </div>
 
         <div class="project-divider">
-            <a href="https://github.com/guptavasu1213?tab=repositories" class="view-more-projects-button">View More
+            <a href="https://github.com/guptavasu1213?tab=repositories" target="_blank" class="view-more-projects-button">View More
                 Projects</a>
         </div>
 
@@ -227,7 +230,8 @@
             <div class="contact-info">
                 <div class="contact-info-section">
                     <label class="labels" for="name">Name</label><br>
-                    <input class="textbox white-font" type="text" id="name" name="name" placeholder="Your Name" required><br>
+                    <input class="textbox white-font" type="text" id="name" name="name" placeholder="Your Name"
+                        required><br>
                 </div>
                 <div class="contact-info-section">
                     <label class="labels" for="email">E-mail</label><br>
@@ -236,7 +240,8 @@
             </div>
             <div class="contact-message">
                 <label class="labels" for="message">Message</label><br>
-                <textarea class="textbox white-font" name="name" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea class="textbox white-font" name="name" id="message" cols="30" rows="10"
+                    placeholder="Your Message" required></textarea>
             </div>
             <div class="center-align">
                 <input class="submit" type="submit" value="Send">
