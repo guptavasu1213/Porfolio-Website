@@ -6,7 +6,6 @@ function main(){
     let typedLetterIndex = 0;
 
     (function type(){
-        console.log("BOOO")
         let timeout = 200
 
         if(currentNounIndex === allNouns.length){
@@ -21,7 +20,7 @@ function main(){
         if(typedLetters.length === currentText.length){
             currentNounIndex++;
             typedLetterIndex = 0;
-            timeout = 3000
+            timeout = 2500
         }
 
         setTimeout(type, timeout);

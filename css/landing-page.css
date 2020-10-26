@@ -1,0 +1,129 @@
+#header_area {
+    position: fixed;
+    z-index: 1;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    
+    background-color: var(--dark-gray);
+}
+
+.nav-bar-hamburger{
+    color: white;
+}
+
+.resume{
+    border: 1px solid rgba(255, 255, 255, .5);
+
+    transition: .1s ease;
+    transition-property: border-color; 
+}
+.resume:hover{
+    border-color: rgb(190, 33, 138);
+}
+
+/* Change padding of the top-left item */
+#header_area .main-menu .navbar .navbar-brand{
+    color: white;
+}
+
+/* Change text properties of the elements in navigation bar */
+#header_area .main-menu .nav-item .nav-link{
+    font: normal 500 2.1vmin var(--raleway);
+    text-transform: uppercase;
+    color: white;
+
+    padding: 0.7rem 2.5rem;
+    min-height:5vh;
+    
+    transition: .3s ease;
+    transition-property: background-size, background-image, background-color;
+}
+#header_area .main-menu .nav-item .nav-link:hover{
+    background-image: var(--pink-gradient);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+#home-area {
+    background-image: url(../img/backgrounds/landing-bg.jpeg);
+    background-size: cover;
+    background-position: top center;
+
+    position: relative;
+    z-index: 0;
+}
+#home-area::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+    opacity: .5;
+    
+    z-index: -1;
+}
+
+.greeting-text{
+    font-family: "Montserrat", sans-serif;
+    font-size: 5.5vmin;
+    text-align: center;
+    color: #ffffff;
+
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.text-fade{
+    opacity: 80%;
+}
+
+.my-description-text{
+    font-size: 80%;
+}
+
+.typing{
+}
+
+.typing::after{
+    content: "|";
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.learn-more{
+    padding: 1rem 2.5rem;
+    font-family: var(--raleway);
+    text-transform: uppercase;
+
+    display: inline-block;
+    color: var(--dark-gray);
+    font-size: 2.5vmin;
+    
+    margin: auto;
+    border-radius: 2.5rem;
+    background-color: rgba(255,255,255,0.5);
+
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+.learn-more:hover{
+    background-color: rgba(255,255,255,1);
+    color: var(--dark-gray);
+    text-decoration: none;
+}

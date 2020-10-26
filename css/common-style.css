@@ -1,0 +1,62 @@
+/* import fonts from fonts.css file */
+@import url(./fonts.css);
+@import url(./partials/variables.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Remove all the padding */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.contain{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-heading{
+    font: normal 600 5vmin var(--raleway);
+    text-transform: uppercase;
+    color:  black;
+}
+
+.white-font{
+    color: white;
+}
+
+.divider{
+    display: block;
+    width: 70vw;
+    height: 2px;
+    background-color: black;    
+    margin: 2rem 0 3rem 0;
+}
+
+
+.pink-gradient-text{
+    background-image: var(--pink-gradient);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.white-background{
+    background-color: #ffffff;  
+}
+
+.light-gray-background{
+    background-color: #F6F6F6;
+}
