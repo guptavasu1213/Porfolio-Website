@@ -1,26 +1,26 @@
 const allNouns = ['solutions', 'ideas', 'happiness'];
 
-function main(){
+function main() {
 
     let currentNounIndex = 0;
     let typedLetterIndex = 0;
 
-    (function type(){
-        let timeout = 200
+    (function type() {
+        let timeout = 200;
 
-        if(currentNounIndex === allNouns.length){
+        if (currentNounIndex === allNouns.length) {
             currentNounIndex = 0;
         }
 
-        let currentText = allNouns[currentNounIndex]
-        let typedLetters = currentText.slice(0, ++typedLetterIndex)
+        let currentText = allNouns[currentNounIndex];
+        let typedLetters = currentText.slice(0, ++typedLetterIndex);
 
         document.querySelector(".typing").textContent = typedLetters;
-        
-        if(typedLetters.length === currentText.length){
+
+        if (typedLetters.length === currentText.length) {
             currentNounIndex++;
             typedLetterIndex = 0;
-            timeout = 2500
+            timeout = 2500;
         }
 
         setTimeout(type, timeout);
