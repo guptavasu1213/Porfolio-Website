@@ -19,6 +19,75 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/contact.css">
 
+    <script type="text/x-dot-template" id="projects-template">
+        <!-- Template for rendering the data. If the data's length
+         is greater than 0, it renders the projects tab for
+         every element in the provided data. Otherwise, it renders
+       the message "No Projects to show!" -->
+
+    {{? it.length == 0}}
+    <div>
+        No Projects to show!
+    </div>
+    {{??}}
+
+    <div class="section-heading pink-gradient-text">
+        Projects
+    </div>
+    <div class="divider"></div>
+
+    {{~it :value:i}}
+    <div class="project">
+        <!-- If Even Projects -->
+        {{? i % 2 == 0}}
+        <div class="content-container">
+            <div class="project-title">{{=value.title}}</div>
+            <div class="project-description">
+                {{=value.description}}
+            </div>
+            <div class="button-container">
+                <a href="#" class="project-button">Learn More</a>
+                <a href="#" class="project-button">View Source</a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="project-image" src={{=value.imgSrc}}>
+        </div>
+
+        <!-- Else Odd Projects -->
+        {{??}}
+        <div class="image-container">
+            <img class="project-image" src={{=value.imgSrc}}>
+        </div>
+        <div class="content-container">
+            <div class="project-title">{{=value.title}}</div>
+            <div class="project-description">
+                {{=value.description}}
+            </div>
+            <div class="button-container">
+                <a href="#" class="project-button">Learn More</a>
+                <a href="#" class="project-button">View Source</a>
+            </div>
+        </div>
+        {{?}}
+    </div>
+
+    <!-- Add project seperator-->
+    {{? i != it.length-1}}
+    <hr>
+    {{??}}
+    <!-- Add View More button after last project -->
+    <div class="project-divider">
+        <a href="https://github.com/guptavasu1213?tab=repositories" target="_blank"
+            class="view-more-projects-button">View More
+            Projects</a>
+    </div>
+    {{?}}
+
+    {{~}}
+    {{?}}
+
+    </script>
 </head>
 
 <body>
@@ -93,7 +162,7 @@
     </section>
 
     <section id="projects" class="contain light-gray-background">
-        <div class="section-heading pink-gradient-text">
+        <!-- <div class="section-heading pink-gradient-text">
             Projects
         </div>
         <div class="divider"></div>
@@ -214,13 +283,9 @@
                     <a href="#" class="project-button">View Source</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="project-divider">
-            <a href="https://github.com/guptavasu1213?tab=repositories" target="_blank"
-                class="view-more-projects-button">View More
-                Projects</a>
-        </div>
+
 
     </section>
 
@@ -265,7 +330,11 @@
     <!-- bootstrap js file -->
     <script src="./js/external/bootstrap.min.js"></script>
 
+    <script src="./js/external/doT.js"></script>
+
     <script src="./js/typingEffect.js"></script>
+
+    <script src="./js/projects.js"></script>
 
 </body>
 
