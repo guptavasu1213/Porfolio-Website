@@ -31,6 +31,10 @@
     transition: border-color 0.15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.contact-form {
+    width: 70%;
+}
+
 #contact .labels {
     font: normal bold 17px var(--raleway);
     text-transform: uppercase;
@@ -46,8 +50,8 @@
     border-width: 1px;
     border-color: white;
     border-radius: 5%;
-    min-width: 50px;
-    width: 300px;
+    min-width: 100px;
+    width: 40%;
     margin: 3rem 4rem;
     padding: 0.5rem 2rem;
     transition: .3s ease;
@@ -88,6 +92,9 @@ footer {
 }
 
 @media (max-width: 900px) {
+    .contact-form {
+        width: 90%;
+    }
     .contact-info {
         flex-direction: column;
     }
