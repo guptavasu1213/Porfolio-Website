@@ -30,7 +30,7 @@
 /* Change text properties of the elements in navigation bar */
 
 #header-area .main-menu .nav-item .nav-link {
-    font: normal 500 2.1vmin var(--raleway);
+    font: normal 500 1.1rem var(--raleway);
     text-transform: uppercase;
     color: white;
     padding: 0.7rem 2.5rem;
@@ -70,7 +70,7 @@
 
 .greeting-text {
     font-family: "Montserrat", sans-serif;
-    font-size: 5.5vmin;
+    font-size: 3.5rem;
     text-align: center;
     color: #ffffff;
     padding: 2rem;
@@ -107,7 +107,7 @@
     text-transform: uppercase;
     display: inline-block;
     color: var(--dark-gray);
-    font-size: 2.5vmin;
+    font-size: 1.5rem;
     margin: auto;
     border-radius: 2.5rem;
     background-color: rgba(255, 255, 255, 0.5);
@@ -119,4 +119,18 @@
     background-color: rgba(255, 255, 255, 1);
     color: var(--dark-gray);
     text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .greeting-text {
+        font-size: 2.5rem;
+        padding: 0rem;
+    }
+    .my-description-text {
+        font-size: 60%;
+    }
+    .learn-more {
+        font-size: 1rem;
+        padding: 0.7rem 2rem;
+    }
 }
