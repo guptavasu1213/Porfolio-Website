@@ -1,17 +1,26 @@
 #about-me .summary-text {
-    font: normal 400 2.5vmin "Ubuntu";
+    font: normal 400 1.5rem "Ubuntu";
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .my-portrait {
-    width: 15%;
-    height: 15%;
-    max-width: 450px;
+    max-width: 250px;
+    max-height: 250px;
+    width: 20%;
+    min-width: 150px;
+    min-height: 150px;
     border-radius: 100%;
     border-style: solid;
     border-width: thin;
+    padding: 0.1rem;
     border-color: rgb(153, 153, 153);
     margin-bottom: 3rem;
+}
+
+@media (max-width: 900px) {
+    #about-me .summary-text {
+        font-size: 1rem;
+    }
 }
