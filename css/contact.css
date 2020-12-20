@@ -1,95 +1,97 @@
-#contact{
+#contact {
     background-image: linear-gradient( #a77a79 0%, #8e423e 100%);
 }
 
-.contact-info{
+.contact-info {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
 }
 
-.contact-info-section{
+.contact-info-section {
     flex: 1;
 }
 
-.contact-info-section, .contact-message{
+.contact-info-section, .contact-message {
     padding: 10px;
 }
 
-.contact-info-section .textbox{
-    width: 300px;
+.contact-info-section .textbox {
+    width: 100%;
 }
 
-.contact-message .textbox{
-    width: 620px;
+.contact-message .textbox {
+    width: 100%;
 }
 
-.contact-info-section .textbox, .contact-message .textbox{
+.contact-info-section .textbox, .contact-message .textbox {
     padding: 5px;
-
     background-color: transparent;
-    
     outline: none;
-    border: 2px solid hsla(0,0%,100%,.6);
-    
-    transition: border-color 0.15s ease-in-out,box-shadow .15s ease-in-out;
+    border: 2px solid hsla(0, 0%, 100%, .6);
+    transition: border-color 0.15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-#contact .labels{
+#contact .labels {
     font: normal bold 17px var(--raleway);
     text-transform: uppercase;
 }
 
-#contact .send{
+#contact .send {
     font: normal 500 17px var(--raleway);
     color: white;
     text-transform: uppercase;
     text-align: center;
-
     background-color: transparent;
-
     border-style: solid;
     border-width: 1px;
     border-color: white;
     border-radius: 5%;
-
     min-width: 50px;
     width: 300px;
-
     margin: 3rem 4rem;
     padding: 0.5rem 2rem;
-
     transition: .3s ease;
-    transition-property: background-color, color; 
+    transition-property: background-color, color;
 }
 
-#contact .send:hover{
+#contact .send:hover {
     background-color: white;
     color: black;
 }
 
-#contact .center-align{
+#contact .center-align {
     text-align: center;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
-    opacity: 0.5; 
+    opacity: 0.5;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: white;
-}
-  
-::-ms-input-placeholder { /* Microsoft Edge */
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: white;
 }
 
-footer{
-    color: white;   
-    font: normal 500 2vmin var(--raleway);
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+footer {
+    color: white;
+    font: normal 500 1.3rem var(--raleway);
     text-align: center;
-
     background-color: #171C1A;
-
     padding: 0.7rem;
+}
+
+@media (max-width: 900px) {
+    .contact-info {
+        flex-direction: column;
+    }
+    footer {
+        font-size: 1em;
+    }
 }
