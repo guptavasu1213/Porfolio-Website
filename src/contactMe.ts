@@ -1,3 +1,14 @@
+// Show Post Reporting Popup
+function showPopup(message: string): void {
+	document.querySelector("#popup-message").innerHTML = message;
+	(<HTMLInputElement>document.querySelector(".popup")).style.visibility = "visible";
+}
+
+// Hide Post Reporting Popup
+function hidePopup(): void {
+	(<HTMLInputElement>document.querySelector(".popup")).style.visibility = "hidden";
+}
+
 window.addEventListener("DOMContentLoaded", function () {
 	// get the form elements defined in your form HTML above
 	var form = <HTMLFormElement>document.getElementById("contact-me");
@@ -5,11 +16,11 @@ window.addEventListener("DOMContentLoaded", function () {
 	// Success and Error functions for after the form is submitted
 	function success() {
 		form.reset();
-		alert("DONE!!");
+		showPopup("Message Sent Successfully!");
 	}
 
 	function error() {
-		alert("Error!");
+		showPopup("Oops! Error has occurred.");
 	}
 
 	// handle the form submission event
@@ -35,3 +46,12 @@ function ajax(method: string, url: string, data: FormData, success: any, error: 
 	};
 	xhr.send(data);
 }
+
+
+// Attach button listeners on public view page
+function attachListeners(): void {
+	let okayBtn = document.querySelector("#okayBtn");
+	okayBtn.addEventListener("click", hidePopup);
+}
+
+attachListeners();
