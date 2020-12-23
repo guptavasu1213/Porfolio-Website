@@ -1,5 +1,5 @@
 "use strict";
-const allNouns = ['solutions', 'ideas', 'happiness'];
+const allNouns = ["solutions", "ideas", "happiness"];
 function main() {
     let currentNounIndex = 0;
     let typedLetterIndex = 0;

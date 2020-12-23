@@ -1,4 +1,4 @@
-const allNouns = ['solutions', 'ideas', 'happiness'];
+const allNouns = ["solutions", "ideas", "happiness"];
 
 function main() {
 
