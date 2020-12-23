@@ -1,6 +1,8 @@
 /* Variables */
-:root{
+
+:root {
     --dark-gray: #171C1A;
-    --pink-gradient: linear-gradient(90deg, rgba(211,41,153,1) 67%, rgba(199,19,72,1) 100%);
+    --pink-gradient: linear-gradient(90deg, rgba(211, 41, 153, 1) 67%, rgba(199, 19, 72, 1) 100%);
     --raleway: "Raleway";
+    --pink-shade: rgb(252, 45, 183);
 }

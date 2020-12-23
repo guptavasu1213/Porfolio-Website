@@ -91,7 +91,7 @@
 }
 
 #projects .view-more-projects-button:hover {
-    color: rgb(252, 45, 183);
+    color: var(--pink-shade);
     text-decoration: none;
 }
 

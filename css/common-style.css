@@ -62,6 +62,41 @@ html {
     background-color: #F6F6F6;
 }
 
+/* Side Bar for Social Handles */
+
+.footer-social {
+    position: fixed;
+    top: 70%;
+    bottom: 0%;
+    left: 1%;
+    background-color: var(--dark-gray);
+    margin: 0px;
+    list-style-type: none;
+    border-radius: 5%;
+}
+
+.footer-social::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 70%;
+    margin: 10px auto;
+    background-color: white;
+}
+
+.footer-social li {
+    padding: 1rem 0.5rem;
+}
+
+.footer-social svg {
+    transition: .3s ease;
+    transition-property: stroke;
+}
+
+.footer-social svg:hover {
+    stroke: var(--pink-shade);
+}
+
 @media (max-width: 900px) {
     .section-heading {
         font: normal 600 2rem var(--raleway);
