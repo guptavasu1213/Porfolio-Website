@@ -101,4 +101,31 @@ html {
     .section-heading {
         font: normal 600 2rem var(--raleway);
     }
+    .footer-social {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        border-radius: 0%;
+        background-color: var(--dark-gray);
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7rem;
+    }
+    .footer-social::after {
+        display: none;
+    }
+    .button-social {
+        padding: 0.7rem;
+    }
+    .footer-social svg {
+        transition: .3s ease;
+        transition-property: stroke;
+    }
+    .footer-social svg:hover {
+        stroke: var(--pink-shade);
+    }
 }
