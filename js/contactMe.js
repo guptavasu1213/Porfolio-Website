@@ -1,12 +1,19 @@
 "use strict";
+function showPopup(message) {
+    document.querySelector("#popup-message").innerHTML = message;
+    document.querySelector(".popup").style.visibility = "visible";
+}
+function hidePopup() {
+    document.querySelector(".popup").style.visibility = "hidden";
+}
 window.addEventListener("DOMContentLoaded", function () {
     var form = document.getElementById("contact-me");
     function success() {
         form.reset();
-        alert("DONE!!");
+        showPopup("Message Sent Successfully!");
     }
     function error() {
-        alert("Error!");
+        showPopup("Oops! Error has occurred.");
     }
     form.addEventListener("submit", function (ev) {
         ev.preventDefault();
@@ -30,3 +37,8 @@ function ajax(method, url, data, success, error) {
     };
     xhr.send(data);
 }
+function attachListeners() {
+    let okayBtn = document.querySelector("#okayBtn");
+    okayBtn.addEventListener("click", hidePopup);
+}
+attachListeners();
