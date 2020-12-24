@@ -129,3 +129,22 @@ html {
         stroke: var(--pink-shade);
     }
 }
+
+@media (max-width: 450px) {
+    .section-heading {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .pink-gradient-text {
+        white-space: pre;
+    }
+    .divider {
+        margin: 1.5rem 0 1.5rem 0;
+    }
+    .footer-social {
+        padding: 0rem;
+    }
+    .footer-social li {
+        padding: 0.7rem 0.5rem 0.3rem 0.5rem;
+    }
+}
