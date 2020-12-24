@@ -136,6 +136,9 @@
 }
 
 @media (max-width: 450px) {
+    .name-logo {
+        width: 30px;
+    }
     .greeting-text {
         font-size: 2rem;
         margin: 0rem;
