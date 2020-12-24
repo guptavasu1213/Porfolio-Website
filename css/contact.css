@@ -152,3 +152,18 @@ footer {
         padding: 0.4rem 1.5rem;
     }
 }
+
+@media (max-width: 450px) {
+    #contact .send {
+        font-size: 0.85rem;
+    }
+    #contact .textbox {
+        font-size: 0.8rem;
+    }
+    #contact .labels {
+        font-size: 0.9rem;
+    }
+    footer {
+        font-size: 0.85em;
+    }
+}

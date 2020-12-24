@@ -24,3 +24,13 @@
         font-size: 1rem;
     }
 }
+
+@media (max-width: 450px) {
+    #about-me .summary-text {
+        font-size: 0.8rem;
+    }
+    .my-portrait {
+        min-width: 120px;
+        min-height: 120px;
+    }
+}

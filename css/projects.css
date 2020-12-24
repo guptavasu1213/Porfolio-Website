@@ -118,3 +118,32 @@
         padding: 0.5rem 1rem;
     }
 }
+
+@media (max-width: 450px) {
+    #projects .image-container {
+        height: 130px;
+    }
+    #projects .project .project-button {
+        padding: 0.5rem 1rem;
+    }
+    #projects .project .project-title {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+    #projects .project .project-description {
+        font-size: 0.8rem;
+    }
+    #projects hr {
+        margin: 0rem 0rem 2rem 0rem;
+    }
+    #projects .project .project-button {
+        font-size: 0.6rem;
+        margin: 2rem 0.5rem;
+        padding: 0.3rem 0.6rem;
+    }
+    #projects .view-more-projects-button {
+        font-size: 0.75rem;
+        margin: 1.5rem 0rem;
+        padding: 0.5rem 0rem;
+    }
+}

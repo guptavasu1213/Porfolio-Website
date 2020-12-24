@@ -70,7 +70,7 @@
 
 .greeting-text {
     font-family: "Montserrat", sans-serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
     color: #ffffff;
     padding: 2rem;
@@ -132,5 +132,17 @@
     .learn-more {
         font-size: 1rem;
         padding: 0.7rem 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .greeting-text {
+        font-size: 2rem;
+        margin: 0rem;
+    }
+    .learn-more {
+        font-size: 0.8rem;
+        padding: 0.4rem 1.5rem;
+        margin-top: 1rem;
     }
 }
