@@ -31,6 +31,7 @@ html {
     font: normal 600 3.15rem var(--raleway);
     text-transform: uppercase;
     color: black;
+    margin-top: 3rem;
 }
 
 .white-font {
