@@ -2,31 +2,37 @@
     {
         "title": "IoT Traffic Surveillance System with Adaptive Video Encoding",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "imgSrc": "./img/project_pics/surveillance_cam2.jpg"
+        "imgSrc": "./img/project_pics/surveillance_cam2.jpg",
+        "link": "https://github.com/guptavasu1213/IoT-Traffic-Surveillance-System"
     },
     {
         "title": "Retinal Segmentation for Glaucoma Diagnosis using Deep Learning",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "imgSrc": "./img/project_pics/V0008.jpg"
+        "imgSrc": "./img/project_pics/V0008.jpg",
+        "link": "https://github.com/guptavasu1213/Glaucoma-Diagnosis"
     },
     {
         "title": "Jigsaw Puzzle Game for Touchscreen Table",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "imgSrc": "./img/project_pics/animal-kingdom.png"
+        "imgSrc": "./img/project_pics/animal-kingdom.png",
+        "link": "https://github.com/guptavasu1213/w20hopper"
     },
     {
         "title": "Visual Assistance Software for the Visually Impaired",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "imgSrc": "./img/project_pics/IMG_2989.jpg"
+        "imgSrc": "./img/project_pics/IMG_2989.jpg",
+        "link": "https://github.com/guptavasu1213/Visual-Assistance-Software"
     },
     {
         "title": "Vehicle Counting Algorithm",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "imgSrc": "./img/project_pics/yolo-counter.png"
+        "imgSrc": "./img/project_pics/yolo-counter.png",
+        "link": "https://github.com/guptavasu1213/Yolo-Vehicle-Counter"
     },
     {
         "title": "Personal Portfolio Website",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "imgSrc": "./img/project_pics/portfolio.png"
+        "imgSrc": "./img/project_pics/portfolio.png",
+        "link": "https://github.com/guptavasu1213/Portfolio-Website"
     }
 ]
