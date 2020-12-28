@@ -112,7 +112,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20% 5% 0% 5%;
+    margin: 0% 10%;
     background-color: white;
     border-radius: 5px;
     padding: 2% 10%;
@@ -186,6 +186,9 @@
 }
 
 @media (max-width: 450px) {
+    #learn-more-popup .content {
+        margin: 20% 5% 0% 5%;
+    }
     #projects .image-container {
         height: 130px;
     }
