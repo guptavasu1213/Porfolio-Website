@@ -156,3 +156,12 @@ html {
         padding: 0.7rem 0.5rem 0.3rem 0.5rem;
     }
 }
+
+@keyframes popup-open {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
