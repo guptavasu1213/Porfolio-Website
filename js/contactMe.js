@@ -1,13 +1,10 @@
 "use strict";
 function showPopup(message) {
     document.querySelector("#popup-message").innerHTML = message;
-    document.querySelector(".popup").style.visibility = "visible";
-}
-function hidePopup() {
-    document.querySelector(".popup").style.visibility = "hidden";
+    document.querySelector("#contact-popup").style.display = "flex";
 }
 window.addEventListener("DOMContentLoaded", function () {
-    var form = document.getElementById("contact-me");
+    let form = document.getElementById("contact-me");
     function success() {
         form.reset();
         showPopup("Message Sent Successfully!");
@@ -17,12 +14,12 @@ window.addEventListener("DOMContentLoaded", function () {
     }
     form.addEventListener("submit", function (ev) {
         ev.preventDefault();
-        var data = new FormData(form);
+        let data = new FormData(form);
         ajax(form.method, form.action, data, success, error);
     });
 });
 function ajax(method, url, data, success, error) {
-    var xhr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
     xhr.open(method, url);
     xhr.setRequestHeader("Accept", "application/json");
     xhr.onreadystatechange = function () {
@@ -32,13 +29,15 @@ function ajax(method, url, data, success, error) {
             success(xhr.response, xhr.responseType);
         }
         else {
-            error(xhr.status, xhr.response, xhr.responseType);
+            error();
         }
     };
     xhr.send(data);
 }
 function attachListeners() {
     let okayBtn = document.querySelector("#okayBtn");
-    okayBtn.addEventListener("click", hidePopup);
+    okayBtn.addEventListener("click", function () {
+        closePopup(document.querySelector("#contact-popup"));
+    });
 }
 attachListeners();

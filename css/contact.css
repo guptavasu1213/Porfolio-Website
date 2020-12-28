@@ -91,19 +91,19 @@ footer {
     padding: 0.7rem;
 }
 
-.popup {
+#contact-popup {
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    visibility: hidden;
+    z-index: 2;
 }
 
-.popup .content {
+#contact-popup .content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,7 +113,7 @@ footer {
     padding: 2rem;
 }
 
-.popup .button {
+#contact-popup .button {
     font: normal bold 1rem "Raleway";
     color: var(--dark-gray);
     text-transform: uppercase;
@@ -129,7 +129,7 @@ footer {
     transition-property: background-color, color;
 }
 
-.button:hover {
+#contact-popup .button:hover {
     color: white;
     background-color: var(--dark-gray);
 }
@@ -144,10 +144,10 @@ footer {
     footer {
         font-size: 1em;
     }
-    .popup .content {
+    #contact-popup .content {
         font-size: 1rem;
     }
-    .popup .button {
+    #contact-popup .button {
         font-size: 0.8rem;
         padding: 0.4rem 1.5rem;
     }
