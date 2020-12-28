@@ -13,7 +13,8 @@ function fillLearnMorePopup(singleProjectData) {
     popup.innerHTML = result;
     let closeBtn = document.querySelector("#learn-more-popup .close");
     closeBtn.addEventListener("click", function () {
-        popup.style.visibility = "hidden";
+        popup.style.display = "none";
+        popup.innerHTML = "";
     });
 }
 function attachLearnMoreListeners(json) {
@@ -21,7 +22,7 @@ function attachLearnMoreListeners(json) {
     for (let i = 0; i < learnBtns.length; i++) {
         learnBtns[i].addEventListener("click", function (event) {
             fillLearnMorePopup(json[i]);
-            document.querySelector("#learn-more-popup").style.visibility = "visible";
+            document.querySelector("#learn-more-popup").style.display = "flex";
         });
     }
 }
