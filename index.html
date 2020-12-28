@@ -53,11 +53,11 @@
             <div class="content-container">
                 <div class="project-title">{{=value.title}}</div>
                 <div class="project-description">
-                    {{=value.description}}
+                    {{=value.miniDescription}}
                 </div>
                 <div class="button-container">
-                    <a href="#" class="project-button">Learn More</a>
-                    <a href="{{=value.link}}" class="project-button" target="_blank">View Source</a>
+                    <a class="project-button learn-more-btn">Learn More</a>
+                    <a href="{{=value.sourceLink}}" class="project-button" target="_blank">View Source</a>
                 </div>
             </div>
         </div>
@@ -77,6 +77,26 @@
         {{?}}
 
     </script>
+
+    <script type="text/x-dot-template" id="learn-more-template">
+        <div class="content">
+            <h2 class="pink-gradient-text">{{=it.title}}</h2>
+            <!-- Embed the video if there is a link for it -->
+            {{? it.videoLink != ""}}
+            <div class="video-container">
+                <iframe width="560" height="315" src="{{=it.videoLink}}" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            {{??}}
+            {{?}}
+            <p>{{=it.fullDescription}}</p>
+            <p><span class="pink-gradient-text">Skills:</span> {{=it.skills}}</p>
+            <span class="close">+</span>
+        </div>
+
+    </script>
+
 </head>
 
 <body>
@@ -151,6 +171,8 @@
     </section>
 
     <section id="projects" class="contain light-gray-background"></section>
+
+    <div id="learn-more-popup"></div>
 
     <!-- Section for getting in touch -->
     <section id="contact" class="contain">
