@@ -32,7 +32,8 @@ function fillLearnMorePopup(singleProjectData: Array<any>) {
 	// X button on top-right of the popup
 	let closeBtn = document.querySelector("#learn-more-popup .close");
 	closeBtn.addEventListener("click", function () {
-		(<HTMLInputElement>popup).style.visibility = "hidden";
+		(<HTMLInputElement>popup).style.display = "none";
+		popup.innerHTML = "";
 	});
 }
 
@@ -42,7 +43,7 @@ function attachLearnMoreListeners(json: Array<any>) {
 	for (let i = 0; i < learnBtns.length; i++) {
 		learnBtns[i].addEventListener("click", function (event: any) {
 			fillLearnMorePopup(json[i]);
-			(<HTMLInputElement>document.querySelector("#learn-more-popup")).style.visibility = "visible";
+			(<HTMLInputElement>document.querySelector("#learn-more-popup")).style.display = "flex";
 		});
 	}
 }
