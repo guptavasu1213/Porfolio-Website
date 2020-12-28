@@ -180,6 +180,9 @@
     #learn-more-popup .video-container iframe {
         height: 50%;
     }
+    #learn-more-popup .video-container {
+        width: 100%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -215,8 +218,5 @@
     }
     #learn-more-popup p {
         font-size: 0.8rem;
-    }
-    #learn-more-popup .video-container iframe {
-        height: 20%;
     }
 }
