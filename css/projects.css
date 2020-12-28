@@ -187,7 +187,7 @@
 
 @media (max-width: 450px) {
     #learn-more-popup .content {
-        margin: 20% 5% 0% 5%;
+        margin: 15vh 5% 0% 5%;
     }
     #projects .image-container {
         height: 130px;
