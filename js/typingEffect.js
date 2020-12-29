@@ -1,20 +1,35 @@
 "use strict";
-const allNouns = ["solutions", "ideas", "happiness"];
+const words = ["solutions", "ideas", "happiness"];
 function main() {
-    let currentNounIndex = 0;
+    let currentWordIndex = 0;
     let typedLetterIndex = 0;
+    let typing;
+    typing = true;
     (function type() {
-        let timeout = 200;
-        if (currentNounIndex === allNouns.length) {
-            currentNounIndex = 0;
+        let timeout;
+        if (typing === false) {
+            timeout = 80;
+            let currentText = words[currentWordIndex];
+            let typedLetters = currentText.slice(0, --typedLetterIndex);
+            document.querySelector(".typing").textContent = typedLetters;
+            if (typedLetters.length === 0) {
+                currentWordIndex++;
+                typedLetterIndex = 0;
+                typing = true;
+            }
         }
-        let currentText = allNouns[currentNounIndex];
-        let typedLetters = currentText.slice(0, ++typedLetterIndex);
-        document.querySelector(".typing").textContent = typedLetters;
-        if (typedLetters.length === currentText.length) {
-            currentNounIndex++;
-            typedLetterIndex = 0;
-            timeout = 2500;
+        else {
+            timeout = 200;
+            if (currentWordIndex === words.length) {
+                currentWordIndex = 0;
+            }
+            let currentText = words[currentWordIndex];
+            let typedLetters = currentText.slice(0, ++typedLetterIndex);
+            document.querySelector(".typing").textContent = typedLetters;
+            if (typedLetters.length === currentText.length) {
+                timeout = 2000;
+                typing = false;
+            }
         }
         setTimeout(type, timeout);
     }());
