@@ -1,56 +1,56 @@
 [
     {
         "title": "IoT Traffic Surveillance System with Adaptive Video Encoding",
-        "miniDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "fullDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+        "miniDescription": "The project involves the creation of an IoT Traffic Surveillance system that aims to reduce the required networking resources by using an adaptive video encoding algorithm. A traffic measurement system is integrated on the cloud server to analyze the surveillance videos and aid in optimization of video encoding parameters.",
+        "fullDescription": "The project involves the creation of an IoT Traffic Surveillance system that aims to reduce the required networking resources by using an adaptive video encoding algorithm. In my fog-computing architecture, the cloud server is responsible for analyzing the surveillance videos, calculating and sending the video encoding parameters to the fog node. Once the fog nodes receive these parameters, the videos are compressed using the given encoding parameters and the video quality is adjusted so that the network bandwidth is saved.<br><br>Out of the various possibilities for video analysis techniques, my system integrates a traffic measurement algorithm. The cloud server computes the optimized encoding parameters by comparing the results of traffic measurement on high quality videos with its compressed version.<br><br>The overall results showed a <b>50 times</b> reduction of surveillance video data while streaming.",
         "imgSrc": "./img/project_pics/surveillance_cam2.jpg",
-        "videoLink": "",
+        "videoLink": "https://www.youtube.com/embed/bGhxlzXSW0A",
         "sourceLink": "https://github.com/guptavasu1213/IoT-Traffic-Surveillance-System",
-        "skills": "Python, FFMPEG"
+        "skills": "Python, FFMPEG, OpenCV, Git"
     },
     {
         "title": "Retinal Segmentation for Glaucoma Diagnosis using Deep Learning",
-        "miniDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "fullDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+        "miniDescription": "The project aims to diagnose Glaucoma using image processing and segmentation techniques on human eye retina images.",
+        "fullDescription": "Glaucoma is an eye disease that is one of the leading causes of irreversible blindness around the world. One of the major indicators of Glaucoma is the enlargement of the Optic Cup (OC) with respect to the Optic Disc (OD).<br><br>The project aims to diagnose Glaucoma using a two-step approach for image segmentation. The first step includes the identification of the Optic Nerve Head (ONH) area using a thresholding algorithm to eliminate the excess background. After the ONH area is detected, the original images and their corresponding masks are passed to the next step of the framework. The second step includes the application of a few preprocessing techniques, and segmentation of OD and OC using the U-Net deep learning architecture. ",
         "imgSrc": "./img/project_pics/V0008.jpg",
-        "videoLink": "",
+        "videoLink": "https://www.youtube.com/embed/bZQm6gvH-dA",
         "sourceLink": "https://github.com/guptavasu1213/Glaucoma-Diagnosis",
         "skills": "Python, OpenCV, PyTorch"
     },
     {
         "title": "Jigsaw Puzzle Game for Touchscreen Table",
-        "miniDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "fullDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+        "miniDescription": "Developed a multi-player jigsaw puzzle game using Godot game engine with GDScript integration for touch screen tables at Edmonton Public Library. The game provides 3 levels of difficulty and allows up-to 4 players join at all times in the game.",
+        "fullDescription": "Developed a multi-player jigsaw puzzle game using Godot game engine with GDScript integration for touch screen tables at Edmonton Public Library. The game gives the players the opportunity to collaborate and solve the puzzle together. The game provides 3 levels of difficulty and allows up-to 4 players join at all times in the game.<br><br>Our team facilitated the product development and fulfillment by adopting Agile Scrum methodology. We engaged with the client for gathering requirements to create user stories, milestones, work breakdown structure, and resource allocation. ",
         "imgSrc": "./img/project_pics/animal-kingdom.png",
         "videoLink": "https://www.youtube.com/embed/GS54qtnmpag",
         "sourceLink": "https://github.com/guptavasu1213/w20hopper",
-        "skills": "Godot, GDScript"
+        "skills": "Godot, GDScript, Scrum, Git"
     },
     {
         "title": "Visual Assistance Software for the Visually Impaired",
-        "miniDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "fullDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+        "miniDescription": "The proposed project involves the creation of a visual assistance application for the visually impaired to identify people in their surroundings to avoid potential collisions. Vibrations of different lengths were used to notify the visually impaired about the location of the person in the view.",
+        "fullDescription": "The proposed project involves the creation of a visual assistance application for the visually impaired to identify people in their surroundings to avoid potential collisions. TensorFlow Lite Object Detection API is used to identify the people in the view of a visually impaired person. Vibrations of different lengths were used to notify the visually impaired about the location of the person in the view.",
         "imgSrc": "./img/project_pics/IMG_2989.jpg",
-        "videoLink": "",
+        "videoLink": "https://www.youtube.com/embed/VRvO-ftRpvs",
         "sourceLink": "https://github.com/guptavasu1213/Visual-Assistance-Software",
         "skills": "Java, Android Studio"
     },
     {
         "title": "Vehicle Counting Algorithm",
-        "miniDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "fullDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+        "miniDescription": "This project aims to count every vehicle (motorcycle, bus, car, cycle, truck, train) detected in the input video using YOLOv3 object-detection algorithm. The algorithm is a combination of Detection, Tracking, and Counting.",
+        "fullDescription": "This project aims to count every vehicle (motorcycle, bus, car, cycle, truck, train) detected in the input video using YOLOv3 object-detection algorithm. The algorithm applies a single neural network to the full image, and then divides the image into regions and predicts bounding boxes and probabilities for each region. In addition, the detections made by the neural network are tracked and counted.",
         "imgSrc": "./img/project_pics/yolo-counter.png",
-        "videoLink": "",
+        "videoLink": "https://www.youtube.com/embed/Q_VgYc86tJw",
         "sourceLink": "https://github.com/guptavasu1213/Yolo-Vehicle-Counter",
-        "skills": "Python, OpenCV"
+        "skills": "Python, OpenCV, Git"
     },
     {
         "title": "Personal Portfolio Website",
-        "miniDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-        "fullDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+        "miniDescription": "This project made it possible for me to showcase and describe my projects in detail.",
+        "fullDescription": "The project was primarily intended to showcase my past projects and to polish my front-end development skills. The website was responsively designed and developed to respond to the user's behavior and environment based on screen sizes, platform, and orientation.<br><br>Dot.js, a front-end templating library was used to eliminate code redundancy and have a cleaner code base.",
         "imgSrc": "./img/project_pics/portfolio.png",
         "videoLink": "",
         "sourceLink": "https://github.com/guptavasu1213/Portfolio-Website",
-        "skills": "Typescript, HTML, CSS"
+        "skills": "Typescript, HTML, CSS, Dot.js, Git"
     }
 ]
