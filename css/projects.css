@@ -130,7 +130,6 @@
     margin: 0.75rem 0rem;
     font: normal normal 1.75rem "Raleway";
     text-align: center;
-    text-overflow: unset;
 }
 
 #learn-more-popup .video-container {
@@ -145,6 +144,7 @@
 #learn-more-popup p {
     margin-top: 0.75rem;
     font: normal normal 1rem "Raleway";
+    line-height: 1.5rem;
 }
 
 #learn-more-popup .pink-gradient-text {

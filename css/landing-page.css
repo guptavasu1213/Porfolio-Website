@@ -13,12 +13,12 @@
 
 .resume {
     border: 1px solid rgba(255, 255, 255, .5);
-    transition: .1s ease;
+    transition: .3s ease;
     transition-property: border-color;
 }
 
 .resume:hover {
-    border-color: rgb(190, 33, 138);
+    border-color: var(--pink-shade);
 }
 
 /* Change padding of the top-left item */
@@ -36,16 +36,11 @@
     padding: 0.7rem 2.5rem;
     min-height: 5vh;
     transition: .3s ease;
-    transition-property: background-size, background-image, background-color;
+    transition-property: color;
 }
 
 #header-area .main-menu .nav-item .nav-link:hover {
-    background-image: var(--pink-gradient);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color: var(--pink-shade);
 }
 
 #home-area {
