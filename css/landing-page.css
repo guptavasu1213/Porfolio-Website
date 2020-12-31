@@ -80,8 +80,6 @@
     font-size: 80%;
 }
 
-.typing {}
-
 .typing::after {
     content: "|";
     animation: blink 0.5s infinite ease;

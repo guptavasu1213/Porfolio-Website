@@ -86,8 +86,6 @@
     background-color: var(--dark-gray);
     padding: 0.7rem 0rem;
     width: 80%;
-    transition: .3s ease;
-    transition-property: color;
 }
 
 #projects .view-more-projects-button:hover {

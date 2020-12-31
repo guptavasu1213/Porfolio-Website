@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/contact.css">
 
+    <!-- Library for fade animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <script type="text/x-dot-template" id="projects-template">
         <!-- Template for rendering the data. If the data's length
          is greater than 0, it renders the projects tab for
@@ -33,19 +37,19 @@
     </div>
     {{??}}
 
-    <div class="section-heading pink-gradient-text">
+    <div class="section-heading pink-gradient-text" data-aos="fade">
         Projects
     </div>
-    <div class="divider"></div>
+    <div class="divider" data-aos="fade"></div>
 
     {{~it :value:i}}
 
     <!-- If Even Projects -->
     {{? i % 2 == 0}}
-    <div class="project even">
+    <div class="project even" data-aos="fade-right">
         <!-- Else Odd Projects -->
         {{??}}
-        <div class="project odd">
+        <div class="project odd" data-aos="fade-left">
             {{?}}
             <div class="image-container">
                 <img class="project-image" src={{=value.imgSrc}} width="500" height="250">
@@ -68,8 +72,8 @@
         {{??}}
         <!-- Add View More button after last project -->
 
-        <a href="https://github.com/guptavasu1213?tab=repositories" target="_blank"
-            class="view-more-projects-button">View More
+        <a href="https://github.com/guptavasu1213?tab=repositories" target="_blank" class="view-more-projects-button"
+            data-aos="fade">View More
             Projects</a>
         {{?}}
 
@@ -255,6 +259,14 @@
 
     <script src="./js/contactMe.js"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1500
+        });
+    </script>
 </body>
 
 </html>

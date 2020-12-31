@@ -9,6 +9,10 @@ The website is currently hosted at: https://guptavasu1213.github.io/Porfolio-Web
 ```
 npm i --save-dev @types/dot
 ```
+* Types for AOS library for scroll animations
+```
+npm install --save @types/aos
+```
 
 ## Status
 Under Construction
