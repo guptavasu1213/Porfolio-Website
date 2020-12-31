@@ -28,8 +28,8 @@
     },
     {
         "title": "Visual Assistance Software for the Visually Impaired",
-        "miniDescription": "The proposed project involves the creation of a visual assistance application for the visually impaired to identify people in their surroundings to avoid potential collisions. Vibrations of different lengths were used to notify the visually impaired about the location of the person in the view.",
-        "fullDescription": "The proposed project involves the creation of a visual assistance application for the visually impaired to identify people in their surroundings to avoid potential collisions. TensorFlow Lite Object Detection API is used to identify the people in the view of a visually impaired person. Vibrations of different lengths were used to notify the visually impaired about the location of the person in the view.",
+        "miniDescription": "The project involves the creation of a visual assistance application for the visually impaired to identify people in their surroundings to avoid potential collisions. Vibrations of different lengths were used to notify the visually impaired about the location of the person in the view.",
+        "fullDescription": "The project involves the creation of a visual assistance application for the visually impaired to identify people in their surroundings to avoid potential collisions. TensorFlow Lite Object Detection API is used to identify the people in the view of a visually impaired person. Vibrations of different lengths were used to notify the visually impaired about the location of the person in the view.",
         "imgSrc": "./img/project_pics/IMG_2989.jpg",
         "videoLink": "https://www.youtube.com/embed/VRvO-ftRpvs",
         "sourceLink": "https://github.com/guptavasu1213/Visual-Assistance-Software",
