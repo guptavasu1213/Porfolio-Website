@@ -34,6 +34,19 @@ function ajax(method, url, data, success, error) {
     };
     xhr.send(data);
 }
+function removeSideBarAnimationOnMobile() {
+    function myFunction(query) {
+        let sideBar = document.querySelector(".footer-social");
+        if (query.matches) {
+            if (sideBar.getAttributeNames().indexOf("data-aos") >= 0) {
+                sideBar.removeAttribute("data-aos");
+            }
+        }
+    }
+    var query = window.matchMedia("(max-width: 900px)");
+    myFunction(query);
+    query.addEventListener("change", myFunction);
+}
 function attachListeners() {
     let okayBtn = document.querySelector("#okayBtn");
     okayBtn.addEventListener("click", function () {
@@ -41,3 +54,4 @@ function attachListeners() {
     });
 }
 attachListeners();
+removeSideBarAnimationOnMobile();

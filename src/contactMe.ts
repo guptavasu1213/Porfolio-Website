@@ -42,6 +42,20 @@ function ajax(method: string, url: string, data: FormData, success: any, error: 
 	xhr.send(data);
 }
 
+// Remove the animation on loading the side bar in mobile view 
+function removeSideBarAnimationOnMobile(): void {
+	function myFunction(query: any) {
+		let sideBar = document.querySelector(".footer-social");
+		if (query.matches) { // If media query matches
+			if (sideBar.getAttributeNames().indexOf("data-aos") >= 0) {
+				sideBar.removeAttribute("data-aos");
+			}
+		}
+	}
+	var query = window.matchMedia("(max-width: 900px)");
+	myFunction(query); // Call listener function at run time
+	query.addEventListener("change", myFunction); // Attach listener function on state changes
+}
 
 // Attach button listeners on public view page
 function attachListeners(): void {
@@ -52,3 +66,4 @@ function attachListeners(): void {
 }
 
 attachListeners();
+removeSideBarAnimationOnMobile();
