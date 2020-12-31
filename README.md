@@ -1,7 +1,7 @@
-# porfolio-website
+# Porfolio Website
 
 This repository contains the code for my portfolio website I have designed and created from scratch.
-The website is currently hosted at: https://guptavasu1213.github.io/Porfolio-Website/
+The website is hosted at: https://vasugupta.ca/
 
 
 ## Prerequisites
@@ -15,4 +15,4 @@ npm install --save @types/aos
 ```
 
 ## Status
-Under Construction
+Completed
