@@ -1,5 +1,5 @@
 #about-me .summary-text {
-    font: normal 400 1.5rem "Ubuntu";
+    font: normal 450 1.2rem var(--raleway);
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -21,13 +21,13 @@
 
 @media (max-width: 900px) {
     #about-me .summary-text {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 450px) {
     #about-me .summary-text {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .my-portrait {
         min-width: 120px;
