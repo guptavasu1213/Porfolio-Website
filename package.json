@@ -1,10 +1,8 @@
 {
 	"name": "portfolio",
 	"version": "1.0.0",
-	"devDependencies": {
-		"@types/dot": "^1.1.4"
-	},
 	"dependencies": {
-		"@types/aos": "^3.0.3"
+		"@types/aos": "^3.0.3",
+		"@types/dot": "^1.1.4"
 	}
 }
