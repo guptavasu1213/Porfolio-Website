@@ -5,13 +5,9 @@ The website is hosted at: https://vasugupta.ca/
 
 
 ## Prerequisites
-* Types for Dot.JS
+- Run the following command:
 ```
-npm i --save-dev @types/dot
-```
-* Types for AOS library for scroll animations
-```
-npm install --save @types/aos
+    npm i
 ```
 
 ## Status
